@@ -12,8 +12,8 @@
         android:title="Monitor" />
 
     <item
-        android:id="@+id/navigation_profile"
-        android:icon="@drawable/ic_person"
+        android:id="@+id/navigation_setting"
+        android:icon="@drawable/ic_baseline_settings_24"
         android:title="Profile" />
 
 

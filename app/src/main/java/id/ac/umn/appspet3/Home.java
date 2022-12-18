@@ -2,9 +2,6 @@ package id.ac.umn.appspet3;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.NavigationUI;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,16 +12,13 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationBarView;
 
-import id.ac.umn.appspet3.databinding.ActivityHomeBinding;
-import id.ac.umn.appspet3.databinding.ActivityMainBinding;
-
 public class Home extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
 
     HomeFragment homeFragment = new HomeFragment();
     MonitorFragment monitorFragment = new MonitorFragment();
-    ProfileFragment profileFragment = new ProfileFragment();
+    SettingFragment settingFragment = new SettingFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,8 +39,8 @@ public class Home extends AppCompatActivity {
                     case R.id.navigation_monitor:
                         getSupportFragmentManager().beginTransaction().replace(R.id.container, monitorFragment).commit();
                         return true;
-                    case R.id.navigation_profile:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container, profileFragment).commit();
+                    case R.id.navigation_setting:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.container, settingFragment).commit();
                         return true;
                 }
                 return false;
