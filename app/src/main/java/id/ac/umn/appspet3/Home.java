@@ -80,6 +80,6 @@ public class Home extends AppCompatActivity {
                     startActivity(new Intent(Home.this,logout.class));
                     return true;
         }
-         return super.onOptionsItemSelected(item);
+         return true;
      }
 }
