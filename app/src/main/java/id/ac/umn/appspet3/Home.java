@@ -64,4 +64,15 @@ public class Home extends AppCompatActivity {
         super.onStop();
         homeAdapter.startListening();
     }
+     @Override
+     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch(item.getItemId()){
+                case R.id.Profile:
+                    startActivity(new Intent(Home.this,logout.class));
+                    return true;
+                case R.id.OM_logout:
+                    startActivity(new Intent(Home.this,logout.class));
+                    return true;
+        }
+     }
 }
