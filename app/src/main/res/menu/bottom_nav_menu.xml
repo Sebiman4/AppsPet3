@@ -15,7 +15,8 @@
         android:id="@+id/navigation_setting"
         android:icon="@drawable/ic_baseline_settings_24"
         android:title="Profile" />
-
-
-
+     <item
+        android:id="@+id/OM_logout"
+        android:title="Logout"/>
+    
 </menu>
