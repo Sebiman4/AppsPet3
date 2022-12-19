@@ -11,27 +11,12 @@ import android.widget.ImageView;
 
 public class AddPet extends AppCompatActivity {
 
-    private ImageView image;
-    private EditText pemilik, type, bio, alamat, notelp;
+    private EditText pemilik, type, bio, alamat, notelp, image;
     private Button tambah;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_pet);
-        image.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                choosePicture();
-            }
-        });
-
-    }
-
-    private void choosePicture(){
-        Intent intent = new Intent();
-        intent.setType("image/*");
-        intent.setAction(Intent.ACTION_GET_CONTENT);
-        startActivityForResult(intent, 1);
     }
 }
