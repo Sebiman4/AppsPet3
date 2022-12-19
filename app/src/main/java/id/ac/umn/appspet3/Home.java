@@ -66,7 +66,8 @@ public class Home extends AppCompatActivity {
     }
      @Override
      public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        switch(item.getItemId()){
+         setContentView(R.menu.bottom_nav_menu);
+         switch(item.getItemId()){
                 case R.id.navigation_setting:
                     startActivity(new Intent(Home.this,ProfileActivity.class));
                     return true;
