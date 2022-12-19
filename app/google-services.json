@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "618348661501",
+    "firebase_url": "https://appspet-f7831-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "appspet-f7831",
     "storage_bucket": "appspet-f7831.appspot.com"
   },
@@ -42,6 +43,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "618348661501-jmm37jdgema7fnaaotq0t5j7hcp58t3c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "umn.ac.id.appspet",
+            "certificate_hash": "744f87a5cd01327eb9c1cf016b184f7cd58a5d1a"
+          }
+        },
         {
           "client_id": "618348661501-j0uepbonkgvkhlmdpp1sdf58m31l9mts.apps.googleusercontent.com",
           "client_type": 3

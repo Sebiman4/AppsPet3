@@ -10,7 +10,7 @@ public class CardView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.cardview);
 
-        cardView = findViewById(R.id.card_view)
+        cardView = findViewById(R.id.card_view);
     }
 
 
