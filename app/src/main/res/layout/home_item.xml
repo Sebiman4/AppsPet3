@@ -43,17 +43,6 @@
             android:layout_marginLeft="10dp"
             android:layout_below="@+id/namatype"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/nomortelp"
-            android:textStyle="bold"
-            android:text="Nomor Telp"
-            android:textSize="25sp"
-            android:layout_toRightOf="@+id/img1"
-            android:layout_marginLeft="10dp"
-            android:layout_below="@+id/alamatrmh"/>
-
     </RelativeLayout>
 
 

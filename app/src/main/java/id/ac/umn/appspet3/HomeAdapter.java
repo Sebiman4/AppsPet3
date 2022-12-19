@@ -1,5 +1,6 @@
 package id.ac.umn.appspet3;
 
+import android.content.Context;
 import android.content.pm.LabeledIntent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +14,8 @@ import com.bumptech.glide.Glide;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 
+import java.util.ArrayList;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class HomeAdapter extends FirebaseRecyclerAdapter<HomeModel,HomeAdapter.myViewHolder> {
@@ -21,8 +24,9 @@ public class HomeAdapter extends FirebaseRecyclerAdapter<HomeModel,HomeAdapter.m
      * Initialize a {@link RecyclerView.Adapter} that listens to a Firebase query. See
      * {@link FirebaseRecyclerOptions} for configuration options.
      *
-     * @param options
+     * @param //options
      */
+
     public HomeAdapter(@NonNull FirebaseRecyclerOptions<HomeModel> options) {
         super(options);
     }
