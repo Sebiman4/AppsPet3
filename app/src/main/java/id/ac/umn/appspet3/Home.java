@@ -64,6 +64,12 @@ public class Home extends AppCompatActivity {
         super.onStop();
         homeAdapter.startListening();
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.bottom_nav_menu, menu);
+        return true;
+    }
      @Override
      public boolean onNavigationItemSelected(@NonNull MenuItem item) {
          setContentView(R.menu.bottom_nav_menu);
@@ -75,5 +81,6 @@ public class Home extends AppCompatActivity {
                     startActivity(new Intent(Home.this,logout.class));
                     return true;
         }
+         return super.onOptionsItemSelected(item);
      }
 }
